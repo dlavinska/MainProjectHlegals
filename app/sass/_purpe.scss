@@ -1,0 +1,46 @@
+.purpe {
+    position: relative;
+    background: url(../img/symbol.svg) no-repeat center top,
+        $purpegradient;
+    border-radius: 0px 0px 12px 12px;
+    background-size: 523px 600px, cover;
+    margin-bottom: 20px;
+    
+
+    &::after {
+        content: '';
+        height: 10px;
+        background: $greyone;
+        border-radius: 0px 0px 12px 12px;
+        bottom: -10px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        
+    }
+
+    &::before {
+        content: '';
+        height: 20px;
+        background: $greytwo;
+        border-radius: 0px 0px 12px 12px;
+        bottom: -20px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .purpe {
+        background-size: 893px 1024px, cover;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .purpe {
+        background-size: 670px 768px, cover;
+    }
+
+}

@@ -1,0 +1,143 @@
+.achievements {
+    background-color: $greybackground;
+    padding: 30px 0;
+    
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blackgrafit;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+       padding-bottom: 30px;
+    }
+
+    &__item {
+        padding: 0 30px;
+    }
+
+    &__pict {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 100px;
+        height: 90px;
+        background: $white;
+        border-radius: 12px;
+    }
+
+    &__pictureone {
+        width: 54px;
+        height: 40px;
+    }
+
+    &__picturetwo {
+        width: 106px;
+        height: 40px;
+    }
+
+    &__picturethree {
+        width: 130px;
+        height: 40px;
+    }
+
+    &__picturefour {
+        width: 111px;
+        height: 40px;
+    }
+
+    &__none {
+        display: none;
+    }
+
+    &__dots {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__dot {
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        margin: 0 7px;
+        border: none;
+        border-radius: 50%;
+        background-color: $bluelink;
+        opacity: 0.2;
+        cursor: pointer;
+    }
+
+    &__dot.active {
+        opacity: 1;
+    }
+
+    &__dot:not(.active):hover {
+        opacity: 0.6;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .achievements {
+ 
+        &__none {
+            display: block;
+        }
+
+        &__list {
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 40px;
+        }
+
+        &__item {
+            padding: 0;
+        }
+
+        &__pict {
+            padding: 0;
+        }
+
+        &__dot-none {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .achievements {
+
+        &__pict {
+            height: 110px;
+        }
+        
+        &__pictureone {
+            width: 80px;
+            height: 60px;
+        }
+    
+        &__picturetwo {
+            width: 159px;
+            height: 60px;
+        }
+    
+        &__picturethree {
+            width: 195px;
+            height: 60px;
+        }
+    
+        &__picturefour {
+            width: 166px;
+            height: 60px;
+        }
+
+
+    }
+}

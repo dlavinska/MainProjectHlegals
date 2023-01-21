@@ -1,0 +1,12 @@
+@mixin title ($fz: 30px, $lh: 37px, $bg: $redtextservices) {
+    font-size: $fz;
+    line-height: $lh;
+    background: $bg;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+

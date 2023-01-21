@@ -1,0 +1,204 @@
+.footer {
+    background-color: $greybackground;
+    padding-bottom: 30px;
+
+    &__content {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    &__content-border {
+        border-top: 2px solid $grey;
+    }
+
+    &__contacts {
+        margin-bottom: 30px;
+    }
+
+    &__contacts-adress {
+        margin-bottom: 21px;
+    }
+
+    &__contacts-adress-name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $blackgrafit;
+        margin-bottom: 6px;
+    }
+
+    &__contacts-link {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__contacts-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__facebook-link {
+        margin-bottom: 7px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__facebook-link:hover path {
+        fill: $accent;
+    }
+
+    &__phone {
+        font-size: 16px;
+        line-height: 20px;
+        color: $bluegrafit;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__email {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__copyright-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $greytext;
+    }
+
+    
+}
+
+@media (min-width: 768px) {
+
+    .footer {
+        padding-bottom: 0;
+
+        &__wrapper-main {
+            padding-left: 60px;
+            padding-right: 33px;
+        }
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            padding: 30px 0;
+        }
+
+        &__content-about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 56px;
+        }
+
+        &__contacts {
+            margin-bottom: 0;
+        }
+
+        &__contacts-about {
+            padding-bottom: 26px;
+        }
+
+        &__contacts-adress {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__contacts-adress-name {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 0;
+            &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background-color: $greytext;
+            border-radius: 50%;
+            margin-left: 10px;
+            }
+        }
+
+        &__contacts-link {
+            display: block;
+            margin-left: 10px;
+        }
+
+        &__contacts-main {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__facebook-link {
+            margin-bottom: 0;
+        }
+
+        &__phone {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 0;
+            &::after, &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background-color: $greytext;
+                border-radius: 50%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+    
+        }
+
+        &__email {
+            display: block;
+        }
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    .footer {
+
+        &__wrapper-main {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        &__content-about {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+            padding: 30px 0;
+        }
+
+        &__contacts-about {
+            padding-bottom: 0;
+        }
+        
+    }
+}
+
+
+@media (min-width: 1320px) {
+    .footer {
+        &__wrappper-main {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+    }
+}
+
+

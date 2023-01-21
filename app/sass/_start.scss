@@ -1,0 +1,71 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    min-width: 375px;
+    
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1380px;
+    min-width: 375px;
+    padding: 0 30px;
+    
+
+}
+
+.container-lg {
+    max-width: 1440px;
+}
+
+.container-min {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-object {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: $bluelink;
+    transition-duration: 300ms;
+    transition-property: color;
+}
+
+a:hover {
+    color: $accent;
+}
+
+.stop-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+
+

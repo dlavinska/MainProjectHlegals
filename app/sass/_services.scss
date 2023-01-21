@@ -1,0 +1,128 @@
+
+.services {
+    padding-bottom: 30px;
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 0;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    &__arrow {
+        width: 12px;
+        height: 12px;
+        margin-left: 2px;
+    }
+
+    &__link:hover path {
+        stroke: $accent;
+    }
+
+    &__title {
+        font-weight: 700;
+        @include title;
+    }
+
+    &__parent {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+    }
+
+    &__item {
+        width: 100%;
+        padding: 0 30px 30px;
+    }
+
+    &__box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__box-img {
+        width: 92px;
+        height: 92px;
+        margin-bottom: 30px;
+        background: $white;
+        border-radius: 24px;
+        padding: 14px;
+
+    }
+
+    &__box-link {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 15px;
+    }
+
+    &__box-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $white;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .services {
+        padding: 0 30px 0;
+
+        &__main {
+            padding: 60px 0;
+        }
+
+        &__title {
+            @include title ($fz: 38px, $lh: 46px);
+        }
+
+        &__item {
+            width: 50%;
+            padding: 0 30px 60px;
+        }
+
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .services {
+
+        &__item {
+            width: 33.333%;
+            padding: 0 25px 60px;
+
+        }
+
+    }
+
+}
+
+@media (min-width: 1021px) {
+
+    .services {
+
+        &__item {
+            padding: 0 20px 60px;
+
+        }
+
+    }
+
+}

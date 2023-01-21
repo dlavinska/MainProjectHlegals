@@ -1,0 +1,122 @@
+
+.introduction {
+    
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    &__content {
+       padding-top: 25px;
+    }
+
+    &__content-title {
+        font-weight: 700;
+        margin-bottom: 28px;
+        @include title;
+    }
+
+    &__content-text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $black;
+        padding-bottom: 20px;
+    }
+
+    &__advantages {
+        padding-top: 10px;
+    }
+
+    &__advantages-list {
+        border-left: 4px solid $grey;
+        padding-left: 30px;
+
+    }
+
+    &__advantages-item {
+        margin-bottom: 40px;
+    }
+
+    &__advantages-item:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+
+    &__advantages-item-head {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__advantages-item-icon {
+        margin-right: 8px;
+    }
+
+    &__advantages-item-counter {
+        @include title (36px, 44px);
+    }
+
+    &__advantages-item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $blackgrafit;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    .introduction {
+        padding-bottom: 60px;
+        &__content-title {
+            @include title (38px, 46px);
+        }
+
+        &__content {
+            padding-top: 65px;
+            padding-right: 60px;
+        }
+
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .introduction {
+        display: grid;
+        grid-template-rows: min-content min-content;
+        grid-template-columns: 489px 1fr;
+        padding-top: 63px;
+    
+        &__advantages {
+            padding: 0;
+        }
+
+        &__content {
+            padding: 0;
+        
+        }
+
+        &__advantages-list {
+            margin-left: 30px;
+            padding-left: 30px;
+        }
+
+        &__advantages-item-text {
+            white-space: pre-line;
+        }
+
+        &__content p:last-child {
+            padding-bottom: 0;
+        }
+
+    }
+
+}
+
+
+
+
+

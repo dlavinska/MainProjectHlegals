@@ -1,0 +1,147 @@
+@import 'mixin';
+
+.experience {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 30px;
+    
+    &__list {
+        display: flex;
+        align-items: flex-end;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        padding-bottom: 30px;
+        margin: 0 -30px 0 0;
+    }
+
+    &__border {
+        border: 2px solid rgba($white, 0.3); 
+    }
+
+    &__list::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__list button {
+        white-space: nowrap;
+        font-weight: 700;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        line-height: 37px;
+        color: $greytext;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        padding-right: 30px;
+    }
+
+    &__list button:hover {
+        @include title ($bg: $redtextexperience);
+    }
+
+    &__active {
+        @include title ($bg: $redtextexperience);
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__content.active {
+        display: block;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+        padding: 30px 0;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $white;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .experience {
+
+        padding: 60px 30px 0;
+
+        &__list {
+            padding-bottom: 60px;
+            margin: 0 -60px 0 0;
+            
+        }
+
+        &__list button {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__list button:hover {
+            @include title ($fz: 38px, $lh: 46px, $bg: $redtextexperience);
+        }
+            
+        &__active {
+            @include title ($fz: 38px, $lh: 46px, $bg: $redtextexperience);
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 37px;
+            padding-top: 60px;
+        }
+
+        &__text {
+            max-width: 648px;
+        }
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    .experience {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        padding: 60px 0 0 30px;
+
+        &__list {
+            display: block;
+            border-right: 4px solid rgba($white, 0.3);
+            padding-right: 60px;
+            margin-right: 60px;
+            border-bottom: none;
+            text-align: right;
+            padding-bottom: 14px;
+            padding-top: 14px;
+        }
+
+        &__list button {
+            padding-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__list button:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+
+        &__border {
+            display: none;
+        }
+
+        &__title {
+            padding-top: 8px;
+        }
+
+    }
+}
